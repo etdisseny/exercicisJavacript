@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercicis JavaScript Bàsic</title>
+    <script type="text/javascript">
+        /*ex 1*/
+        console.log("Hola mundo");
+        /*ex2*/
+        alert("¡Me llamo Ester!");
+        /*ex3*/
+        var name= "Ester";
+        var surname="Termens";
+        console.log(name + " "+ surname);
+        /*ex4*/
+        var num1= 45;
+        var num2= 34;
+        console.log("La suma entre "+num1+" i "+num2+ " es " + (num1+num2));
+        /*ex5*/
+        var notaExamen= "6";
+        if(notaExamen>=5){
+            alert("Enhorabuena, has aprovado el examen con un "+ notaExamen);
+        }else{
+            alert("Ohh, has suspendido el examamen con un "+ notaExamen);
+        }
+        /*ex6*/
+        var frase= "Tinc un cotxe de color verd";
+        var newFrase= frase.replace('verd', 'blau');
+        console.log(newFrase);
+        var fraseReplaceO= newFrase.replace(/[o]/gi,'u');
+        console.log(fraseReplaceO);
+        /*ex7*/
+        var objects=["taula", "cadira","ordinador","llibreta"];
+        objects.forEach(function(elemento,indice){
+            console.log("l'objecte "+elemento+" està a la posició " + indice);
+        });
+        /*ex8*/
+       function calculadora(operador, valor1, valor2){
+           
+            if(operador=="resta"){
+                total= valor1 - valor2;
+            }else if(operador=="suma"){
+                total= valor1 + valor2;
+            }else if(operador=="multiplicacion"){
+                total= valor1 * valor2;
+            }
+
+            return total;
+            
+        }
+        var resultado = calculadora('resta', 30, 20);
+        document.write(resultado);
+
+       
+        
+
+    </script>
+</head>
+<body>
+   
+</body>
+</html>
